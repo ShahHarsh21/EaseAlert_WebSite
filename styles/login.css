@@ -54,17 +54,17 @@ section .contentBx .formBx {
     width: 70%;
     border: 1px solid #C9C9C9;
     border-radius: 30px;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 
 }
 
 .form-header {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
