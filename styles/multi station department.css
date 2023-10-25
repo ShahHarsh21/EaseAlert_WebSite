@@ -676,8 +676,32 @@ textarea {
 }
 
 @media screen and (max-width:582px) {
+    .header {
+        width: auto;
+        height: 90px;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--white);
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.05);
+    }
+
     .header-title{
         display: none;
+    }
+
+    .logout {
+        width: 70px;
+        height: 40px;
+        display: inline-flex;
+        padding: 4px 10px;
+        flex-direction: row;
+        align-items: center;
+        gap: 0px;
+        border-radius: 100px;
+        border: 1px solid rgba(15, 15, 15, 0.10);
+        background: var(--white);
     }
 }
 

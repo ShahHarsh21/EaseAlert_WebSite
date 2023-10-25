@@ -134,6 +134,15 @@ section .contentBx .formBx {
     line-height: 34px;
 }
 
+.paragraph1 {
+    color: var(--dark, #000);
+    font-family: 'Work Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
+
 .rememberBox {
     display: flex;
     justify-content: space-between;
@@ -170,7 +179,7 @@ section .contentBx .formBx {
         height: 100%;
         background-image: url('../assets/image/Mask group.png');
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         /* object-fit: cover; */
     }
 
@@ -193,5 +202,137 @@ section .contentBx .formBx {
 
     .form-header {
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:582px) {
+    section .contentBx {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        /* margin: 10px; */
+    }
+
+    .logo {
+        width: 200px;
+        height: 30px;
+    }
+
+    section .contentBx .formBx {
+        width: 80%;
+        padding: 20px;
+        background-color: rgb(255 255 255 / 0.9);
+        margin: 50px;
+        gap: 20px;
+    }
+
+    .form-header {
+        margin-bottom: 5px;
+    }
+
+    .title {
+        color: var(--dark, #000);
+        font-family: 'Work Sans';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+    }
+
+    .subtitle {
+        color: var(--dark, #000);
+        font-family: 'Work Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .form-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inputBox {
+        width: auto;
+        padding: 10px 15px;
+        border-radius: 8px;
+        border: 1px solid rgba(15, 15, 15, 0.10);
+        background: var(--white, #FFF);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .inputInnerBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-input {
+        width: 35px;
+        height: 35px;
+    }
+
+    .input-label {
+        color: rgba(0, 0, 0, 0.50);
+        font-family: 'Work Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .input {
+        /* width: 100%; */
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        font-family: 'Work Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .paragraph1 {
+        color: var(--dark, #000);
+        font-family: 'Work Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .rememberBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rememberme {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .login-button {
+        display: flex;
+        /* width: 80%; */
+        padding: 15px 70px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 100px;
+        background: linear-gradient(90deg, #8C2828 0%, #E85E5E 100%);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: var(--white)
     }
 }
