@@ -121,6 +121,7 @@ body {
 .section-group-body-line {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: 10px;
     width: 100%;
 }
@@ -770,6 +771,5 @@ textarea {
 
     .section-group-body-line {
         justify-content: center;
-        align-items: center;
     }
 }
