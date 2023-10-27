@@ -120,8 +120,9 @@ body {
 
 .primary-btn-small {
     width: 145px;
-    height: 54px;
-    padding: 15px 0px;
+    height: auto;
+    min-height: 54px;
+    padding: 15px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,12 +136,14 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    box-sizing: border-box;
 }
 
 .secondary-btn-small {
     width: 145px;
-    height: 54px;
-    padding: 15px 0px;
+    height: auto;
+    min-height: 54px;
+    padding: 15px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +156,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    box-sizing: border-box;
 }
 
 @media screen and ((min-width:2561px) and (max-width:3840px)) {
@@ -174,7 +178,7 @@ body {
     .secondary-btn,
     .primary-btn-small,
     .secondary-btn-small {
-        padding: calc(15px * var(--multiplier-3840)) 0;
+        padding: calc(15px * var(--multiplier-3840)) calc(5px * var(--multiplier-3840));
         border-radius: calc(10px * var(--multiplier-3840));
         font-size: calc(16px * var(--multiplier-3840));
         font-weight: 500;
@@ -184,7 +188,7 @@ body {
     .primary-btn-small,
     .secondary-btn-small {
         width: calc(145px * var(--multiplier-3840));
-        height: calc(54px * var(--multiplier-3840));
+        min-height: calc(54px * var(--multiplier-3840));
     }
 }
 
@@ -207,7 +211,7 @@ body {
     .secondary-btn,
     .primary-btn-small,
     .secondary-btn-small {
-        padding: calc(15px * var(--multiplier-2560)) 0;
+        padding: calc(15px * var(--multiplier-2560)) calc(5px * var(--multiplier-2560));
         border-radius: calc(10px * var(--multiplier-2560));
         font-size: calc(16px * var(--multiplier-2560));
         font-weight: 500;
@@ -217,7 +221,7 @@ body {
     .primary-btn-small,
     .secondary-btn-small {
         width: calc(145px * var(--multiplier-2560));
-        height: calc(54px * var(--multiplier-2560));
+        min-height: calc(54px * var(--multiplier-2560));
     }
 }
 
@@ -240,7 +244,7 @@ body {
     .secondary-btn,
     .primary-btn-small,
     .secondary-btn-small {
-        padding: calc(15px * var(--multiplier-1600)) 0;
+        padding: calc(15px * var(--multiplier-1600)) calc(5px * var(--multiplier-1600));
         border-radius: calc(10px * var(--multiplier-1600));
         font-size: calc(16px * var(--multiplier-1600));
         font-weight: 500;
@@ -249,8 +253,8 @@ body {
 
     .primary-btn-small,
     .secondary-btn-small {
-        width: calc(135px * var(--multiplier-1600));
-        height: calc(54px * var(--multiplier-1600));
+        width: calc(145px * var(--multiplier-1600));
+        min-height: calc(54px * var(--multiplier-1600));
     }
 }
 
@@ -273,7 +277,7 @@ body {
     .secondary-btn,
     .primary-btn-small,
     .secondary-btn-small {
-        padding: calc(15px * var(--multiplier-1440)) 0;
+        padding: calc(15px * var(--multiplier-1440)) calc(5px * var(--multiplier-1440));
         border-radius: calc(10px * var(--multiplier-1440));
         font-size: calc(16px * var(--multiplier-1440));
         font-weight: 500;
@@ -282,8 +286,8 @@ body {
 
     .primary-btn-small,
     .secondary-btn-small {
-        width: calc(125px * var(--multiplier-1440));
-        height: calc(54px * var(--multiplier-1440));
+        width: calc(145px * var(--multiplier-1440));
+        min-height: calc(54px * var(--multiplier-1440));
     }
 }
 
@@ -306,7 +310,7 @@ body {
     .secondary-btn,
     .primary-btn-small,
     .secondary-btn-small {
-        padding: calc(15px * var(--multiplier-1366)) 0;
+        padding: calc(15px * var(--multiplier-1366)) calc(5px * var(--multiplier-1366));
         border-radius: calc(10px * var(--multiplier-1366));
         font-size: calc(16px * var(--multiplier-1366));
         font-weight: 500;
@@ -315,8 +319,8 @@ body {
 
     .primary-btn-small,
     .secondary-btn-small {
-        width: calc(125px * var(--multiplier-1366));
-        height: calc(54px * var(--multiplier-1366));
+        width: calc(145px * var(--multiplier-1366));
+        min-height: calc(54px * var(--multiplier-1366));
     }
 }
 
@@ -339,7 +343,7 @@ body {
     .secondary-btn,
     .primary-btn-small,
     .secondary-btn-small {
-        padding: calc(15px * var(--multiplier-1280)) 0;
+        padding: calc(15px * var(--multiplier-1280)) calc(5px * var(--multiplier-1280));
         border-radius: calc(10px * var(--multiplier-1280));
         font-size: calc(16px * var(--multiplier-1280));
         font-weight: 500;
@@ -348,12 +352,12 @@ body {
 
     .primary-btn-small,
     .secondary-btn-small {
-        width: calc(125px * var(--multiplier-1280));
-        height: calc(54px * var(--multiplier-1280));
+        width: calc(145px * var(--multiplier-1280));
+        min-height: calc(54px * var(--multiplier-1280));
     }
 }
 
-@media screen and (max-width:534px) {
+@media screen and (max-width:1080px) {
     .primary-btn-small,
     .secondary-btn-small {
         padding: calc(15px * var(--multiplier-1280)) 0;
@@ -366,15 +370,60 @@ body {
     .primary-btn-small,
     .secondary-btn-small {
         width: calc(210px * var(--multiplier-1280));
-        height: calc(54px * var(--multiplier-1280));
+        height: auto;
+        min-height: calc(54px * var(--multiplier-1280));
     }
 }
 
-@media screen and (max-width:461px) {
+/* Media query for mobile screens */
+@media (max-width: 480px) {
     .primary-btn-small,
     .secondary-btn-small {
-        width: calc(150px * var(--multiplier-1280));
+      width: calc(50% - 10px); /* Show 2 buttons per row */
     }
+  }
+  
+  /* Media query for tablet screens */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .primary-btn-small,
+    .secondary-btn-small {
+      width: calc(50% - 10px); /* Show 2 buttons per row */
+    }
+  }
+  
+  /* Media query for screens wider than a certain size (e.g., laptops) */
+  @media (min-width: 769px) {
+    .primary-btn-small,
+    .secondary-btn-small {
+      width: calc(25% - 10px); /* Show 4 buttons per row */
+    }
+  }
+
+@media screen and (max-width:772px) {
+    .primary-btn-small,
+    .secondary-btn-small {
+        padding: calc(15px * var(--multiplier-1280)) 0;
+        border-radius: calc(10px * var(--multiplier-1280));
+        font-size: 16px;
+        font-weight: 500;
+        line-height: calc(24px * var(--multiplier-1280));
+    }
+
+    /* .primary-btn-small,
+    .secondary-btn-small {
+        width: calc(210px * var(--multiplier-1280));
+        height: auto;
+        min-height: calc(54px * var(--multiplier-1280));
+    } */
+}
+
+@media screen and (max-width:461px) {
+    /* .primary-btn-small,
+    .secondary-btn-small {
+        width: calc(145px * var(--multiplier-1280));
+        height: auto;
+        min-height: calc(54px * var(--multiplier-1280));
+    } */
 }
 
 
