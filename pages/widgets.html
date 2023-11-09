@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>widgets</title>
+    <link rel="stylesheet" href="../styles/widgets.css">
+    <link rel="stylesheet" href="../styles/calender.css">
+    <link rel="stylesheet" href="../styles/clock.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="../index.html">
+            <img src="../assets/image/logo.png" class="logo" >
+        </a>
+        
+        <div class="heading1 semibold header-title">Fire Department</div>
+        <div class="logout">
+            <img src="../assets/image/logo-small.svg" class="logout-logo">
+            <div class="paragraph1 bold">Logout</div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="section">
+                <div class="card">
+                    <div class="heading1 semibold">Calendar</div>
+                    <div class="wrapper">
+                        <header>
+                            <p class="current-date"></p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">
+                                    <img src="../assets/image/previous.svg" alt="">
+                                </span>
+                                <span id="next" class="material-symbols-rounded">
+                                    <img src="../assets/image/next.svg" alt="">
+                                </span>
+                            </div>
+                        </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li>Su</li>
+                                <li>Mo</li>
+                                <li>Tu</li>
+                                <li>We</li>
+                                <li>Th</li>
+                                <li>Fr</li>
+                                <li>Sa</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="heading1 semibold">Clock</div>
+                    <div class="container">
+                        <!-- <div class="mode-switch">Dark Mode</div> -->
+                        <div class="clock">
+                            <label style="--i: 1"><span>1</span></label>
+                            <label style="--i: 2"><span>2</span></label>
+                            <label style="--i: 3"><span>3</span></label>
+                            <label style="--i: 4"><span>4</span></label>
+                            <label style="--i: 5"><span>5</span></label>
+                            <label style="--i: 6"><span>6</span></label>
+                            <label style="--i: 7"><span>7</span></label>
+                            <label style="--i: 8"><span>8</span></label>
+                            <label style="--i: 9"><span>9</span></label>
+                            <label style="--i: 10"><span>10</span></label>
+                            <label style="--i: 11"><span>11</span></label>
+                            <label style="--i: 12"><span>12</span></label>
+                            <div class="indicator">
+                                <span class="hand hour"></span>
+                                <span class="hand minute"></span>
+                                <span class="hand second"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card1">
+                    <div class="heading1 semibold">Atmosphere</div>
+                    <div class="atmosphere-div">
+                        <div class="tomorrow" data-location-id="057606" data-language="EN" data-unit-system="METRIC"
+                            data-skin="light" data-widget-type="upcoming"
+                            style="padding-bottom:22px;position:relative;">
+                            <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer"
+                                target="_blank"
+                                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+                                <img alt="Powered by the Tomorrow.io Weather API"
+                                    src="https://weather-website-client.tomorrow.io/img/powered-by.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <div class="heading1 semibold">Global air quality</div>
+                    <div class="atmosphere-div">
+                        <div class="tomorrow" data-location-id="" data-language="EN" data-unit-system="METRIC"
+                            data-skin="light" data-widget-type="aqiPollutant"
+                            style="padding-bottom:22px;position:relative;">
+                            <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer"
+                                target="_blank"
+                                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+                                <img alt="Powered by the Tomorrow.io Weather API"
+                                    src="https://weather-website-client.tomorrow.io/img/powered-by.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="bottom-text heading1">
+        <span>Contact: support@easealert.easealert.com | Phone: (xxx) xxx-xxx</span>
+    </div>
+    <script src="../script/clock.js"></script>
+    <script src="../script/calender.js"></script>
+    <script src="../script/atmosphere.js"></script>
+    <script src="../script/airQuality.js"></script>
+</body>
+
+</html>

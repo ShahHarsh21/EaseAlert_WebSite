@@ -1,0 +1,175 @@
+@import url('../assets/css/root.css');
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+header .icons span:hover {
+    background: #f2f2f2;
+}
+
+header .current-date {
+    color: #333;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    /* margin-bottom: 20px; */
+}
+
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    /* outline: 1px solid black; */
+}
+
+.calendar .weeks li {
+    color: #333;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: default;
+}
+
+.calendar .days li {
+    color: #666;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background:  var(--primary);
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+@media screen and (max-width:1280px) {
+    header .icons span {
+        height: calc(38px * var(--multiplier-1280));
+        width: calc(38px * var(--multiplier-1280));
+        margin: 0 1px;
+        line-height: calc(38px * var(--multiplier-1280));
+        font-size: calc(1.9rem * var(--multiplier-1280));
+    }
+    
+    .icons span:last-child {
+        margin-right: -10px;
+    }
+    
+    header .current-date {
+        font-size: calc(1.5rem * var(--multiplier-1280));
+    }
+    
+    .calendar .days {
+        margin-bottom: 20px;
+    }
+    
+    .calendar li {
+        font-size: calc(1.07rem * var(--multiplier-1280));
+    }
+    
+    .calendar .weeks li {
+        font-size: calc(1.5rem * var(--multiplier-1280));
+    }
+    
+    .calendar .days li {
+        font-size: calc(1.5rem * var(--multiplier-1280));
+        margin-top: calc(30px * var(--multiplier-1280));
+    }
+    
+    .days li::before {
+        height: calc(40px * var(--multiplier-1280));
+        width: calc(40px * var(--multiplier-1280));
+    }
+}
+
+@media screen and (max-width:405px) {
+    .calendar .weeks li {
+        font-size: 1rem;
+    }
+    
+    .calendar .days li {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+}
