@@ -57,10 +57,12 @@ header .current-date {
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
+    padding: 0px !important;
 }
 
 .calendar .days {
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
+    padding: 0px !important;
 }
 
 .calendar li {
@@ -142,6 +144,7 @@ header .current-date {
     
     .calendar .days {
         margin-bottom: 20px;
+        padding: 0px !important;
     }
     
     .calendar li {
