@@ -247,12 +247,12 @@ body {
         padding: 0 calc(50px * var(--multiplier-1280)) 0 calc(50px * var(--multiplier-1280));
         box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.05);
     }
-
+    
     .logo {
         width: calc(260.556px * var(--multiplier-1280));
         height: calc(35px * var(--multiplier-1280));
     }
-
+    
     .logout {
         width: calc(127px * var(--multiplier-1280));
         height: calc(50px * var(--multiplier-1280));
@@ -260,103 +260,103 @@ body {
         gap: calc(10px * var(--multiplier-1280));
         border-radius: calc(100px * var(--multiplier-1280));
     }
-
+    
     .logout-logo {
         width: calc(32px * var(--multiplier-1280));
         height: calc(32px * var(--multiplier-1280));
     }
-
+    
     .main {
-        padding: 20px;
+        padding: calc(20px * var(--multiplier-1280));
     }
-
+    
     .container {
-        padding: 50px;
+        padding: calc(50px * var(--multiplier-1280));
     }
-
+    
     .inner-container {
-        gap: 50px;
-        padding: 50px !important;
+        gap: calc(50px * var(--multiplier-1280));
+        padding: calc(50px * var(--multiplier-1280)) !important;
     }
-
+    
     .section1 {
-        height: 162px;
+        height: calc(162px * var(--multiplier-1280));
     }
-
+    
     .button1 {
-        width: 539px;
-        height: 162px;
-        padding: 47px auto;
-        font-size: 16px;
-        line-height: 24px;
-
-        border-radius: 100px;
-        border: 5.786px solid #9E2F2F;
+        width: calc(539px * var(--multiplier-1280));
+        height: calc(162px * var(--multiplier-1280));
+        padding: calc(47px * var(--multiplier-1280)) auto;
+        font-size: calc(16px * var(--multiplier-1280));
+        line-height: calc(24px * var(--multiplier-1280));
+    
+        border-radius: calc(100px * var(--multiplier-1280));
+        border: calc(5.786px * var(--multiplier-1280)) solid #9E2F2F;
     }
-
+    
     .button-text {
-        gap: 11px;
+        gap: calc(11px * var(--multiplier-1280));
     }
-
+    
     .text {
-        font-size: 57.857px;
+        font-size: calc(57.857px * var(--multiplier-1280));
     }
-
+    
     .right-content {
-        gap: 10px;
+        gap: calc(10px * var(--multiplier-1280));
     }
-
+    
     .section2 {
-        height: 234px;
-        border-radius: 30px;
+        height: calc(234px * var(--multiplier-1280));
+        border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: 30px;
+        gap: calc(30px * var(--multiplier-1280));
     }
-
+    
     .section-heading {
-        margin: 30px 0px 0px 0px;
-        font-size: 40px;
+        margin: calc(30px * var(--multiplier-1280)) 0px 0px 0px;
+        font-size: calc(40px * var(--multiplier-1280));
     }
-
+    
     .button-group {
-        width: 1440px;
-        gap: 20px;
+        width: calc(1440px * var(--multiplier-1280));
+        gap: calc(20px * var(--multiplier-1280));
     }
-
+    
     .primary-btn {
-        padding: 30px 0px;
-        border-radius: 10px;
-        font-size: 35px;
-        line-height: 24px;
-
+        padding: calc(30px * var(--multiplier-1280)) 0px;
+        border-radius: calc(10px * var(--multiplier-1280));
+        font-size: calc(35px * var(--multiplier-1280));
+        line-height: calc(24px * var(--multiplier-1280));
     }
-
+    
     .button-section {
-        width: 466px;
+        width: calc(466px * var(--multiplier-1280));
     }
-
+    
     .section3 {
-        height: 495px;
-        border-radius: 30px;
+        height: calc(495px * var(--multiplier-1280));
+        border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: 30px;
+        gap: calc(30px * var(--multiplier-1280));
     }
-
+    
     .location {
-        gap: 20px;
-        padding-bottom: 38px;
+        gap: calc(20px * var(--multiplier-1280));
+        padding-bottom: calc(38px * var(--multiplier-1280));
     }
-
+    
     .address {
-        font-size: 35px;
+        font-size: calc(35px * var(--multiplier-1280));
     }
-
+    
     .emergency-text {
-        font-size: 35px;
+        font-size: calc(35px * var(--multiplier-1280));
     }
-
+    
     .bottom-text {
-        margin-bottom: 15px;
-        padding: 0px 10px;
+        margin-bottom: calc(15px * var(--multiplier-1280));
+        padding: 0px calc(10px * var(--multiplier-1280));
     }
+    
 }
