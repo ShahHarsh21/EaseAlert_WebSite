@@ -37,14 +37,14 @@ body {
 .logout {
     width: 127px;
     height: 50px;
-    display: inline-flex;
+    /* display: inline-flex;
     padding: 8px 15px;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     border-radius: 100px;
     border: 1px solid rgba(15, 15, 15, 0.10);
-    background: var(--white);
+    background: var(--white); */
 }
 
 .logout-logo {
@@ -65,12 +65,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     background-color: var(--white);
 }
 
 .inner-container {
-    width: 90%;
+    width: 97%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,9 +266,9 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-2560));
         height: calc(50px * var(--multiplier-2560));
-        padding: calc(8px * var(--multiplier-2560)) calc(15px * var(--multiplier-2560));
+        /* padding: calc(8px * var(--multiplier-2560)) calc(15px * var(--multiplier-2560));
         gap: calc(10px * var(--multiplier-2560));
-        border-radius: calc(100px * var(--multiplier-2560));
+        border-radius: calc(100px * var(--multiplier-2560)); */
     }
     
     .logout-logo {
@@ -281,11 +281,11 @@ body {
     }
     
     .container {
-        padding: calc(100px * var(--multiplier-2560)) auto;
+        /* padding: calc(100px * var(--multiplier-2560)) auto; */
     }
     
     .inner-container {
-        width: calc(1500px * var(--multiplier-2560));
+        /* width: calc(1500px * var(--multiplier-2560)); */
         gap: calc(50px * var(--multiplier-2560));
         margin: calc(50px * var(--multiplier-2560));
     }
@@ -385,9 +385,9 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1600));
         height: calc(50px * var(--multiplier-1600));
-        padding: calc(8px * var(--multiplier-1600)) calc(15px * var(--multiplier-1600));
+        /* padding: calc(8px * var(--multiplier-1600)) calc(15px * var(--multiplier-1600));
         gap: calc(10px * var(--multiplier-1600));
-        border-radius: calc(100px * var(--multiplier-1600));
+        border-radius: calc(100px * var(--multiplier-1600)); */
     }
     
     .logout-logo {
@@ -400,11 +400,11 @@ body {
     }
     
     .container {
-        padding: calc(100px * var(--multiplier-1600)) auto;
+        /* padding: calc(100px * var(--multiplier-1600)) auto; */
     }
     
     .inner-container {
-        width: calc(1500px * var(--multiplier-1600));
+        /* width: calc(1500px * var(--multiplier-1600)); */
         gap: calc(50px * var(--multiplier-1600));
         margin: calc(50px * var(--multiplier-1600));
     }
@@ -504,9 +504,9 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1440));
         height: calc(50px * var(--multiplier-1440));
-        padding: calc(8px * var(--multiplier-1440)) calc(15px * var(--multiplier-1440));
+        /* padding: calc(8px * var(--multiplier-1440)) calc(15px * var(--multiplier-1440));
         gap: calc(10px * var(--multiplier-1440));
-        border-radius: calc(100px * var(--multiplier-1440));
+        border-radius: calc(100px * var(--multiplier-1440)); */
     }
     
     .logout-logo {
@@ -519,11 +519,11 @@ body {
     }
     
     .container {
-        padding: calc(50px * var(--multiplier-1440)) auto;
+        /* padding: calc(50px * var(--multiplier-1440)) auto; */
     }
     
     .inner-container {
-        width: calc(1500px * var(--multiplier-1440));
+        /* width: calc(1500px * var(--multiplier-1440)); */
         gap: calc(50px * var(--multiplier-1440));
         margin: calc(50px * var(--multiplier-1440));
     }
@@ -623,9 +623,9 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1366));
         height: calc(50px * var(--multiplier-1366));
-        padding: calc(8px * var(--multiplier-1366)) calc(15px * var(--multiplier-1366));
+        /* padding: calc(8px * var(--multiplier-1366)) calc(15px * var(--multiplier-1366));
         gap: calc(10px * var(--multiplier-1366));
-        border-radius: calc(100px * var(--multiplier-1366));
+        border-radius: calc(100px * var(--multiplier-1366)); */
     }
     
     .logout-logo {
@@ -638,17 +638,17 @@ body {
     }
     
     .container {
-        padding: calc(50px * var(--multiplier-1366)) auto;
+        /* padding: calc(50px * var(--multiplier-1366)) auto; */
     }
     
     .inner-container {
-        width: calc(1500px * var(--multiplier-1366));
-        gap: calc(50px * var(--multiplier-1366));
-        margin: calc(50px * var(--multiplier-1366));
+        /* width: calc(1500px * var(--multiplier-1366)); */
+        gap: calc(20px * var(--multiplier-1366));
+        margin: calc(10px * var(--multiplier-1366));
     }
     
     .section1 {
-        height: calc(162px * var(--multiplier-1366));
+        height: calc(140px * var(--multiplier-1366));
     }
     
     .button1 {
@@ -675,12 +675,12 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1366));
-        padding: calc(30px * var(--multiplier-1366)) 0;
+        gap: calc(10px * var(--multiplier-1366));
+        padding: calc(10px * var(--multiplier-1366)) 0;
     }
     
     .section-heading {
-        font-size: calc(40px * var(--multiplier-1366));
+        font-size: calc(35px * var(--multiplier-1366));
     }
     
     .button-group {
@@ -704,8 +704,8 @@ body {
     .section3 {
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1366));
-        padding: calc(30px * var(--multiplier-1366)) 0;
+        gap: calc(10px * var(--multiplier-1366));
+        padding: calc(10px * var(--multiplier-1366)) 0;
     }
     
     .location {
@@ -714,11 +714,11 @@ body {
     }
     
     .address {
-        font-size: calc(35px * var(--multiplier-1366));
+        font-size: calc(30px * var(--multiplier-1366));
     }
     
     .emergency-text {
-        font-size: calc(35px * var(--multiplier-1366));
+        font-size: calc(30px * var(--multiplier-1366));
     }
     
     .bottom-text {
@@ -742,9 +742,9 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1280));
         height: calc(50px * var(--multiplier-1280));
-        padding: calc(8px * var(--multiplier-1280)) calc(15px * var(--multiplier-1280));
+        /* padding: calc(8px * var(--multiplier-1280)) calc(15px * var(--multiplier-1280));
         gap: calc(10px * var(--multiplier-1280));
-        border-radius: calc(100px * var(--multiplier-1280));
+        border-radius: calc(100px * var(--multiplier-1280)); */
     }
     
     .logout-logo {
@@ -757,17 +757,17 @@ body {
     }
     
     .container {
-        padding: calc(50px * var(--multiplier-1280)) auto;
+        /* padding: calc(50px * var(--multiplier-1280)) auto; */
     }
     
     .inner-container {
-        width: calc(1500px * var(--multiplier-1280));
-        gap: calc(50px * var(--multiplier-1280));
-        margin: calc(50px * var(--multiplier-1280));
+        /* width: calc(1500px * var(--multiplier-1280)); */
+        gap: calc(20px * var(--multiplier-1280));
+        margin: calc(10px * var(--multiplier-1280));
     }
     
     .section1 {
-        height: calc(162px * var(--multiplier-1280));
+        height: calc(140px * var(--multiplier-1280));
     }
     
     .button1 {
@@ -794,12 +794,12 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1280));
-        padding: calc(30px * var(--multiplier-1280)) 0;
+        gap: calc(10px * var(--multiplier-1280));
+        padding: calc(10px * var(--multiplier-1280)) 0;
     }
     
     .section-heading {
-        font-size: calc(40px * var(--multiplier-1280));
+        font-size: calc(35px * var(--multiplier-1280));
     }
     
     .button-group {
@@ -823,8 +823,8 @@ body {
     .section3 {
         border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1280));
-        padding: calc(30px * var(--multiplier-1280)) 0;
+        gap: calc(10px * var(--multiplier-1280));
+        padding: calc(10px * var(--multiplier-1280)) 0;
     }
     
     .location {
@@ -833,11 +833,11 @@ body {
     }
     
     .address {
-        font-size: calc(35px * var(--multiplier-1280));
+        font-size: calc(30px * var(--multiplier-1280));
     }
     
     .emergency-text {
-        font-size: calc(35px * var(--multiplier-1280));
+        font-size: calc(30px * var(--multiplier-1280));
     }
     
     .bottom-text {
@@ -849,7 +849,7 @@ body {
 
 @media screen and (max-width:1200px) {
     .inner-container {
-        width: 90%;
+        width: 97%;
     }
 }
 
@@ -946,8 +946,8 @@ body {
         flex-direction: row;
         align-items: center;
         gap: 5px;
-        border-radius: 100px;
-        border: 1px solid rgba(15, 15, 15, 0.10);
+        /* border-radius: 100px;
+        border: 1px solid rgba(15, 15, 15, 0.10); */
         background: var(--white);
     }
 

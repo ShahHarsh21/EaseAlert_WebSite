@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="../styles/widgets.css">
     <link rel="stylesheet" href="../styles/calender.css">
     <link rel="stylesheet" href="../styles/clock.css">
+    <link href="https://getbootstrap.com/docs/5.3/components/carousel ">
 </head>
 
 <body>
     <div class="header">
-        <a href="../pages/final.html">
-            <img src="../assets/image/logo.png" class="logo" >
+        <a href="../index.html">
+            <img src="../assets/image/logo.png" class="logo">
         </a>
-        
+
         <div class="heading1 semibold header-title">Fire Department</div>
         <div class="logout">
             <img src="../assets/image/logo-small.svg" class="logout-logo">
@@ -82,6 +83,35 @@
             </div>
             <div class="section">
                 <div class="card1">
+                    <div class="heading1 semibold">Notice Board</div>
+
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-item">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.</div>
+                            <div class="carousel-item">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.</div>
+                            <div class="carousel-item">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.</div>
+                            <!-- Add more slides as needed -->
+                        </div>
+
+                        <div class="carousel-dots" id="carousel-dots"></div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <!-- <div class="card1">
                     <div class="heading1 semibold">Atmosphere</div>
                     <div class="atmosphere-div">
                         <div class="tomorrow" data-location-id="057606" data-language="EN" data-unit-system="METRIC"
@@ -110,7 +140,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
@@ -121,6 +151,66 @@
     <script src="../script/calender.js"></script>
     <script src="../script/atmosphere.js"></script>
     <script src="../script/airQuality.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('.carousel');
+            const dotsContainer = document.getElementById('carousel-dots');
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                const offset = -index * 100 + '%';
+                carousel.style.transform = 'translateX(' + offset + ')';
+            }
+
+            function createDot(index) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    showSlide(currentIndex);
+                    updateDots();
+                });
+                dotsContainer.appendChild(dot);
+            }
+
+            function updateDots() {
+                const dots = dotsContainer.querySelectorAll('.dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            // Create dots for each slide
+            for (let i = 0; i < carousel.children.length; i++) {
+                createDot(i);
+            }
+
+            // Show the initial slide
+            showSlide(currentIndex);
+            updateDots();
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % carousel.children.length;
+                showSlide(currentIndex);
+                updateDots();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+                showSlide(currentIndex);
+                updateDots();
+            }
+
+            // Auto-advance to the next slide every 3 seconds
+            setInterval(nextSlide, 3000);
+
+            // Uncomment the following lines if you want to enable manual navigation with buttons
+            // const nextButton = document.getElementById('next');
+            // const prevButton = document.getElementById('prev');
+            // nextButton.addEventListener('click', nextSlide);
+            // prevButton.addEventListener('click', prevSlide);
+        });
+    </script>
 </body>
 
 </html>

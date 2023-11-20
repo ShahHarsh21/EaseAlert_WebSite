@@ -51,19 +51,19 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 
 .section {
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 .card {
     width: 50%;
-    height: 561px;
-    padding: 50px;
+    height: 500px;
+    padding: 30px 30px 30px 30px;
     border-radius: 30px;
     border: 1px solid #EBEBEB;
     background: #FFF;
@@ -71,9 +71,9 @@ body {
 }
 
 .card1 {
-    width: 50%;
+    width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 30px;
     border-radius: 30px;
     border: 1px solid #EBEBEB;
     background: #FFF;
@@ -95,6 +95,59 @@ body {
     bottom: 0;
     text-align: center;
     font-weight: 600;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: transparent !important;
+
+    color: var(--Dark, #000);
+    text-align: center;
+    font-family: 'Work Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #555;
 }
 
 /* @media screen and (max-width:2560){
@@ -137,26 +190,26 @@ body {
     }
 
     .main {
-        padding: calc(50px * var(--multiplier-1600));
+        padding: calc(30px * var(--multiplier-1600));
     }
 
     .container {
-        gap: calc(30px * var(--multiplier-1600));
+        gap: calc(15px * var(--multiplier-1600));
     }
 
     .section {
-        gap: calc(30px * var(--multiplier-1600));
+        gap: calc(15px * var(--multiplier-1600));
     }
     
     .card {
-        height: calc(561px * var(--multiplier-1600));
-        padding: calc(50px * var(--multiplier-1600));
+        height: calc(500px * var(--multiplier-1600));
+        padding: calc(20px * var(--multiplier-1600)) calc(20px * var(--multiplier-1600)) calc(50px * var(--multiplier-1600)) calc(20px * var(--multiplier-1600));
         border-radius: calc(30px * var(--multiplier-1600));
         box-shadow: 0px calc(4px * var(--multiplier-1600)) calc(30px * var(--multiplier-1600)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
-        padding: calc(50px * var(--multiplier-1600));
+        padding: calc(20px * var(--multiplier-1600));
         border-radius: calc(30px * var(--multiplier-1600));
         box-shadow: 0px calc(4px * var(--multiplier-1600)) calc(30px * var(--multiplier-1600)) 0px rgba(0, 0, 0, 0.08);
     }
@@ -164,6 +217,20 @@ body {
     .bottom-text {
         margin-bottom: calc(15px * var(--multiplier-1600));
         padding: 0px calc(10px * var(--multiplier-1600));
+    }
+
+    .carousel-item {
+        padding: calc(20px * var(--multiplier-1600));
+        margin-bottom: calc(30px * var(--multiplier-1600));
+        border: 1px solid red;
+        border-radius: calc(20px * var(--multiplier-1600));
+        font-size: calc(25px * var(--multiplier-1600));
+    }
+    
+    .dot {
+        width: calc(20px * var(--multiplier-1600));
+        height: calc(20px * var(--multiplier-1600));
+        margin: 0 calc(5px * var(--multiplier-1600));
     }
 }
 
@@ -194,26 +261,26 @@ body {
     }
 
     .main {
-        padding: calc(50px * var(--multiplier-1440));
+        padding: calc(30px * var(--multiplier-1440));
     }
 
     .container {
-        gap: calc(30px * var(--multiplier-1440));
+        gap: calc(15px * var(--multiplier-1440));
     }
 
     .section {
-        gap: calc(30px * var(--multiplier-1440));
+        gap: calc(15px * var(--multiplier-1440));
     }
     
     .card {
-        height: calc(561px * var(--multiplier-1440));
-        padding: calc(50px * var(--multiplier-1440));
+        height: calc(500px * var(--multiplier-1440));
+        padding: calc(20px * var(--multiplier-1440)) calc(20px * var(--multiplier-1440)) calc(50px * var(--multiplier-1440)) calc(20px * var(--multiplier-1440));
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px calc(4px * var(--multiplier-1440)) calc(30px * var(--multiplier-1440)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
-        padding: calc(50px * var(--multiplier-1440));
+        padding: calc(20px * var(--multiplier-1440));
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px calc(4px * var(--multiplier-1440)) calc(30px * var(--multiplier-1440)) 0px rgba(0, 0, 0, 0.08);
     }
@@ -221,6 +288,20 @@ body {
     .bottom-text {
         margin-bottom: calc(15px * var(--multiplier-1440));
         padding: 0px calc(10px * var(--multiplier-1440));
+    }
+
+    .carousel-item {
+        padding: calc(20px * var(--multiplier-1440));
+        margin-bottom: calc(30px * var(--multiplier-1440));
+        border: 1px solid red;
+        border-radius: calc(20px * var(--multiplier-1440));
+        font-size: calc(25px * var(--multiplier-1440));
+    }
+    
+    .dot {
+        width: calc(20px * var(--multiplier-1440));
+        height: calc(20px * var(--multiplier-1440));
+        margin: 0 calc(5px * var(--multiplier-1440));
     }
 }
 
@@ -251,26 +332,26 @@ body {
     }
 
     .main {
-        padding: calc(50px * var(--multiplier-1366));
+        padding: calc(20px * var(--multiplier-1366));
     }
 
     .container {
-        gap: calc(30px * var(--multiplier-1366));
+        gap: calc(15px * var(--multiplier-1366));
     }
 
     .section {
-        gap: calc(30px * var(--multiplier-1366));
+        gap: calc(15px * var(--multiplier-1366));
     }
     
     .card {
-        height: calc(561px * var(--multiplier-1366));
-        padding: calc(50px * var(--multiplier-1366));
+        height: calc(500px * var(--multiplier-1366));
+        padding: calc(50px * var(--multiplier-1366)) calc(20px * var(--multiplier-1366));
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px calc(4px * var(--multiplier-1366)) calc(30px * var(--multiplier-1366)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
-        padding: calc(50px * var(--multiplier-1366));
+        padding: calc(20px * var(--multiplier-1366));
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px calc(4px * var(--multiplier-1366)) calc(30px * var(--multiplier-1366)) 0px rgba(0, 0, 0, 0.08);
     }
@@ -278,6 +359,20 @@ body {
     .bottom-text {
         margin-bottom: calc(15px * var(--multiplier-1366));
         padding: 0px calc(10px * var(--multiplier-1366));
+    }
+
+    .carousel-item {
+        padding: calc(20px * var(--multiplier-1366));
+        margin-bottom: calc(30px * var(--multiplier-1366));
+        border: 1px solid red;
+        border-radius: calc(20px * var(--multiplier-1366));
+        font-size: calc(25px * var(--multiplier-1366));
+    }
+    
+    .dot {
+        width: calc(20px * var(--multiplier-1366));
+        height: calc(20px * var(--multiplier-1366));
+        margin: 0 calc(5px * var(--multiplier-1366));
     }
 }
 
@@ -308,26 +403,26 @@ body {
     }
 
     .main {
-        padding: calc(50px * var(--multiplier-1280));
+        padding: calc(20px * var(--multiplier-1280));
     }
 
     .container {
-        gap: calc(30px * var(--multiplier-1280));
+        gap: calc(15px * var(--multiplier-1280));
     }
 
     .section {
-        gap: calc(30px * var(--multiplier-1280));
+        gap: calc(15px * var(--multiplier-1280));
     }
     
     .card {
-        height: calc(561px * var(--multiplier-1280));
-        padding: calc(50px * var(--multiplier-1280));
+        height: calc(500px * var(--multiplier-1280));
+        padding: calc(50px * var(--multiplier-1280)) calc(20px * var(--multiplier-1280));
         border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px calc(4px * var(--multiplier-1280)) calc(30px * var(--multiplier-1280)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
-        padding: calc(50px * var(--multiplier-1280));
+        padding: calc(20px * var(--multiplier-1280));
         border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px calc(4px * var(--multiplier-1280)) calc(30px * var(--multiplier-1280)) 0px rgba(0, 0, 0, 0.08);
     }
@@ -335,6 +430,20 @@ body {
     .bottom-text {
         margin-bottom: calc(15px * var(--multiplier-1280));
         padding: 0px calc(10px * var(--multiplier-1280));
+    }
+    
+    .carousel-item {
+        padding: calc(20px * var(--multiplier-1280));
+        margin-bottom: calc(30px * var(--multiplier-1280));
+        border: 1px solid red;
+        border-radius: calc(20px * var(--multiplier-1280));
+        font-size: calc(25px * var(--multiplier-1280));
+    }
+    
+    .dot {
+        width: calc(20px * var(--multiplier-1280));
+        height: calc(20px * var(--multiplier-1280));
+        margin: 0 calc(5px * var(--multiplier-1280));
     }
 }
 
@@ -354,6 +463,14 @@ body {
 
     .atmosphere-div {
         width: 100%;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .card1{
+        width: 90%;
     }
 }
 
@@ -398,7 +515,7 @@ body {
     }
 
     .card1 {
-        width: 300px;
+        width: 300px !important;
     }
 }
 

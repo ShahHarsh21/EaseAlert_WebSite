@@ -125,6 +125,129 @@ header .current-date {
     background: #f2f2f2;
 }
 
+@media screen and (max-width:1600px) {
+    header .icons span {
+        height: calc(38px * var(--multiplier-1600));
+        width: calc(38px * var(--multiplier-1600));
+        margin: 0 1px;
+        line-height: calc(38px * var(--multiplier-1600));
+        font-size: calc(1.9rem * var(--multiplier-1600));
+    }
+    
+    .icons span:last-child {
+        margin-right: -10px;
+    }
+    
+    header .current-date {
+        font-size: calc(1.5rem * var(--multiplier-1600));
+    }
+    
+    .calendar .days {
+        margin-bottom: 20px;
+        padding: 0px !important;
+    }
+    
+    .calendar li {
+        font-size: calc(1.07rem * var(--multiplier-1600));
+    }
+    
+    .calendar .weeks li {
+        font-size: calc(1.5rem * var(--multiplier-1600));
+    }
+    
+    .calendar .days li {
+        font-size: calc(1.5rem * var(--multiplier-1600));
+        margin-top: calc(30px * var(--multiplier-1600));
+    }
+    
+    .days li::before {
+        height: calc(40px * var(--multiplier-1600));
+        width: calc(40px * var(--multiplier-1600));
+    }
+}
+
+@media screen and (max-width:1440px) {
+    header .icons span {
+        height: calc(38px * var(--multiplier-1440));
+        width: calc(38px * var(--multiplier-1440));
+        margin: 0 1px;
+        line-height: calc(38px * var(--multiplier-1440));
+        font-size: calc(1.9rem * var(--multiplier-1440));
+    }
+    
+    .icons span:last-child {
+        margin-right: -10px;
+    }
+    
+    header .current-date {
+        font-size: calc(1.5rem * var(--multiplier-1440));
+    }
+    
+    .calendar .days {
+        margin-bottom: 20px;
+        padding: 0px !important;
+    }
+    
+    .calendar li {
+        font-size: calc(1.07rem * var(--multiplier-1440));
+    }
+    
+    .calendar .weeks li {
+        font-size: calc(1.5rem * var(--multiplier-1440));
+    }
+    
+    .calendar .days li {
+        font-size: calc(1.5rem * var(--multiplier-1440));
+        margin-top: calc(30px * var(--multiplier-1440));
+    }
+    
+    .days li::before {
+        height: calc(40px * var(--multiplier-1440));
+        width: calc(40px * var(--multiplier-1440));
+    }
+}
+
+@media screen and (max-width:1366px) {
+    header .icons span {
+        height: calc(38px * var(--multiplier-1366));
+        width: calc(38px * var(--multiplier-1366));
+        margin: 0 1px;
+        line-height: calc(38px * var(--multiplier-1366));
+        font-size: calc(1.9rem * var(--multiplier-1366));
+    }
+    
+    .icons span:last-child {
+        margin-right: -10px;
+    }
+    
+    header .current-date {
+        font-size: calc(1.5rem * var(--multiplier-1366));
+    }
+    
+    .calendar .days {
+        margin-bottom: 20px;
+        padding: 0px !important;
+    }
+    
+    .calendar li {
+        font-size: calc(1.07rem * var(--multiplier-1366));
+    }
+    
+    .calendar .weeks li {
+        font-size: calc(1.5rem * var(--multiplier-1366));
+    }
+    
+    .calendar .days li {
+        font-size: calc(1.5rem * var(--multiplier-1366));
+        margin-top: calc(30px * var(--multiplier-1366));
+    }
+    
+    .days li::before {
+        height: calc(40px * var(--multiplier-1366));
+        width: calc(40px * var(--multiplier-1366));
+    }
+}
+
 @media screen and (max-width:1280px) {
     header .icons span {
         height: calc(38px * var(--multiplier-1280));
