@@ -1,13 +1,5 @@
 @import url('../assets/css/root.css');
 
-/* :root {
-    --multiplier-3840: 2.50;
-    --multiplier-2560: 1.45;
-    --multiplier-1600: 0.90;
-    --multiplier-1440: 0.85;
-    --multiplier-1366: 0.80;
-    --multiplier-1280: 0.75;
-} */
 
 body {
     margin: 0;
@@ -37,14 +29,6 @@ body {
 .logout {
     width: 127px;
     height: 50px;
-    /* display: inline-flex;
-    padding: 8px 15px;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 1px solid rgba(15, 15, 15, 0.10);
-    background: var(--white); */
 }
 
 .logout-logo {
@@ -65,7 +49,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 0px 100px; */
     background-color: var(--white);
 }
 
@@ -194,7 +177,13 @@ body {
 }
 
 .section3 {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.section3-card-location {
+    width: 30%;
     height: auto;
     border-radius: 30px;
     border: 1px solid #363636;
@@ -202,45 +191,58 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px 0;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.section3-card-emergency {
+    width: 70%;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid #363636;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .location {
     width: 90%;
+    height: 194px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* padding-bottom: 38px; */
-    border-bottom: 1px solid #363636;
+    overflow-y: auto;
 }
 
 .address {
     color: var(--Dark, #000);
-    text-align: center;
-    font-family: 'Work Sans';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.emergency-text {
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: start;
-
-    color: var(--Dark, #000);
-    text-align: center;
+    text-align: justify;
     font-family: 'Work Sans';
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     hyphens: auto;
+}
+
+.emergency-text {
+    width: 90%;
+    height: 194px;
+    overflow-y: auto;
+    text-align: justify;
+
+    color: var(--Dark, #000);
+    font-family: 'Work Sans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    hyphens: auto;
+    padding-right: 10px;
 }
 
 .bottom-text {
@@ -266,9 +268,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-2560));
         height: calc(50px * var(--multiplier-2560));
-        /* padding: calc(8px * var(--multiplier-2560)) calc(15px * var(--multiplier-2560));
-        gap: calc(10px * var(--multiplier-2560));
-        border-radius: calc(100px * var(--multiplier-2560)); */
     }
     
     .logout-logo {
@@ -280,23 +279,18 @@ body {
         padding: calc(20px * var(--multiplier-2560));
     }
     
-    .container {
-        /* padding: calc(100px * var(--multiplier-2560)) auto; */
-    }
-    
-    .inner-container {
-        /* width: calc(1500px * var(--multiplier-2560)); */
-        gap: calc(50px * var(--multiplier-2560));
-        margin: calc(50px * var(--multiplier-2560));
+    .inner-container {   
+        gap: calc(20px * var(--multiplier-2560));
+        margin: calc(20px * var(--multiplier-2560));
     }
     
     .section1 {
-        height: calc(162px * var(--multiplier-2560));
+        height: calc(100px * var(--multiplier-2560));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-2560));
-        height: calc(162px * var(--multiplier-2560));
+        height: calc(100px * var(--multiplier-2560));
         padding: calc(47px * var(--multiplier-2560)) auto;
         font-size: calc(16px * var(--multiplier-2560));
         line-height: calc(24px * var(--multiplier-2560));
@@ -318,8 +312,8 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-2560));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-2560));
-        padding: calc(30px * var(--multiplier-2560)) 0;
+        gap: calc(15px * var(--multiplier-2560));
+        padding: calc(10.5px * var(--multiplier-2560)) 0;
     }
     
     .section-heading {
@@ -333,7 +327,7 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-2560));
         max-width: calc(466px * var(--multiplier-2560));
-        padding: calc(30px * var(--multiplier-2560)) 0px;
+        padding: calc(20px * var(--multiplier-2560)) 0px;
         border-radius: calc(10px * var(--multiplier-2560));
         font-size: calc(35px * var(--multiplier-2560));
         line-height: calc(24px * var(--multiplier-2560));
@@ -345,23 +339,38 @@ body {
     }
     
     .section3 {
+        gap: calc(20px * var(--multiplier-2560));
+    }
+
+    .section3-card-location {
         border-radius: calc(30px * var(--multiplier-2560));
+        border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-2560));
-        padding: calc(30px * var(--multiplier-2560)) 0;
+        gap: calc(20px * var(--multiplier-2560));
+        padding: calc(20px * var(--multiplier-2560)) 0;
+    }
+    
+    .section3-card-emergency {
+        border-radius: calc(30px * var(--multiplier-2560));
+        border: 1px solid #363636;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        gap: calc(20px * var(--multiplier-2560));
+        padding: calc(20px * var(--multiplier-2560)) 0;
     }
     
     .location {
         gap: calc(20px * var(--multiplier-2560));
         padding-bottom: calc(38px * var(--multiplier-2560));
+        height: calc(170px * var(--multiplier-2560));
     }
     
     .address {
-        font-size: calc(35px * var(--multiplier-2560));
+        font-size: calc(30px * var(--multiplier-2560));
     }
     
     .emergency-text {
-        font-size: calc(35px * var(--multiplier-2560));
+        font-size: calc(30px * var(--multiplier-2560));
+        height: calc(170px * var(--multiplier-2560));
     }
     
     .bottom-text {
@@ -385,9 +394,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1600));
         height: calc(50px * var(--multiplier-1600));
-        /* padding: calc(8px * var(--multiplier-1600)) calc(15px * var(--multiplier-1600));
-        gap: calc(10px * var(--multiplier-1600));
-        border-radius: calc(100px * var(--multiplier-1600)); */
     }
     
     .logout-logo {
@@ -399,23 +405,18 @@ body {
         padding: calc(20px * var(--multiplier-1600));
     }
     
-    .container {
-        /* padding: calc(100px * var(--multiplier-1600)) auto; */
-    }
-    
-    .inner-container {
-        /* width: calc(1500px * var(--multiplier-1600)); */
-        gap: calc(50px * var(--multiplier-1600));
-        margin: calc(50px * var(--multiplier-1600));
+    .inner-container {   
+        gap: calc(21px * var(--multiplier-1600));
+        margin: calc(20px * var(--multiplier-1600));
     }
     
     .section1 {
-        height: calc(162px * var(--multiplier-1600));
+        height: calc(100px * var(--multiplier-1600));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1600));
-        height: calc(115px * var(--multiplier-1600));
+        height: calc(100px * var(--multiplier-1600));
         padding: calc(47px * var(--multiplier-1600)) auto;
         font-size: calc(16px * var(--multiplier-1600));
         line-height: calc(24px * var(--multiplier-1600));
@@ -437,8 +438,8 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1600));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1600));
-        padding: calc(30px * var(--multiplier-1600)) 0;
+        gap: calc(15px * var(--multiplier-1600));
+        padding: calc(10.5px * var(--multiplier-1600)) 0;
     }
     
     .section-heading {
@@ -452,7 +453,7 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1600));
         max-width: calc(466px * var(--multiplier-1600));
-        padding: calc(30px * var(--multiplier-1600)) 0px;
+        padding: calc(20px * var(--multiplier-1600)) 0px;
         border-radius: calc(10px * var(--multiplier-1600));
         font-size: calc(35px * var(--multiplier-1600));
         line-height: calc(24px * var(--multiplier-1600));
@@ -464,23 +465,38 @@ body {
     }
     
     .section3 {
+        gap: calc(20px * var(--multiplier-1600));
+    }
+
+    .section3-card-location {
         border-radius: calc(30px * var(--multiplier-1600));
+        border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1600));
-        padding: calc(30px * var(--multiplier-1600)) 0;
+        gap: calc(20px * var(--multiplier-1600));
+        padding: calc(20px * var(--multiplier-1600)) 0;
+    }
+    
+    .section3-card-emergency {
+        border-radius: calc(30px * var(--multiplier-1600));
+        border: 1px solid #363636;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        gap: calc(20px * var(--multiplier-1600));
+        padding: calc(20px * var(--multiplier-1600)) 0;
     }
     
     .location {
         gap: calc(20px * var(--multiplier-1600));
         padding-bottom: calc(38px * var(--multiplier-1600));
+        height: calc(170px * var(--multiplier-1600));
     }
     
     .address {
-        font-size: calc(35px * var(--multiplier-1600));
+        font-size: calc(30px * var(--multiplier-1600));
     }
     
     .emergency-text {
-        font-size: calc(35px * var(--multiplier-1600));
+        font-size: calc(30px * var(--multiplier-1600));
+        height: calc(170px * var(--multiplier-1600));
     }
     
     .bottom-text {
@@ -504,9 +520,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1440));
         height: calc(50px * var(--multiplier-1440));
-        /* padding: calc(8px * var(--multiplier-1440)) calc(15px * var(--multiplier-1440));
-        gap: calc(10px * var(--multiplier-1440));
-        border-radius: calc(100px * var(--multiplier-1440)); */
     }
     
     .logout-logo {
@@ -518,23 +531,18 @@ body {
         padding: calc(20px * var(--multiplier-1440));
     }
     
-    .container {
-        /* padding: calc(50px * var(--multiplier-1440)) auto; */
-    }
-    
-    .inner-container {
-        /* width: calc(1500px * var(--multiplier-1440)); */
-        gap: calc(50px * var(--multiplier-1440));
-        margin: calc(50px * var(--multiplier-1440));
+    .inner-container {   
+        gap: calc(30px * var(--multiplier-1440));
+        margin: calc(20px * var(--multiplier-1440));
     }
     
     .section1 {
-        height: calc(162px * var(--multiplier-1440));
+        height: calc(100px * var(--multiplier-1440));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1440));
-        height: calc(115px * var(--multiplier-1440));
+        height: calc(100px * var(--multiplier-1440));
         padding: calc(47px * var(--multiplier-1440)) auto;
         font-size: calc(16px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
@@ -556,8 +564,8 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1440));
-        padding: calc(30px * var(--multiplier-1440)) 0;
+        gap: calc(15px * var(--multiplier-1440));
+        padding: calc(16px * var(--multiplier-1440)) 0;
     }
     
     .section-heading {
@@ -571,7 +579,7 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1440));
         max-width: calc(466px * var(--multiplier-1440));
-        padding: calc(30px * var(--multiplier-1440)) 0px;
+        padding: calc(20px * var(--multiplier-1440)) 0px;
         border-radius: calc(10px * var(--multiplier-1440));
         font-size: calc(35px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
@@ -583,23 +591,38 @@ body {
     }
     
     .section3 {
+        gap: calc(20px * var(--multiplier-1440));
+    }
+
+    .section3-card-location {
         border-radius: calc(30px * var(--multiplier-1440));
+        border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(30px * var(--multiplier-1440));
-        padding: calc(30px * var(--multiplier-1440)) 0;
+        gap: calc(20px * var(--multiplier-1440));
+        padding: calc(20px * var(--multiplier-1440)) 0;
+    }
+    
+    .section3-card-emergency {
+        border-radius: calc(30px * var(--multiplier-1440));
+        border: 1px solid #363636;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        gap: calc(20px * var(--multiplier-1440));
+        padding: calc(20px * var(--multiplier-1440)) 0;
     }
     
     .location {
         gap: calc(20px * var(--multiplier-1440));
         padding-bottom: calc(38px * var(--multiplier-1440));
+        height: calc(180px * var(--multiplier-1440));
     }
     
     .address {
-        font-size: calc(35px * var(--multiplier-1440));
+        font-size: calc(30px * var(--multiplier-1440));
     }
     
     .emergency-text {
-        font-size: calc(35px * var(--multiplier-1440));
+        font-size: calc(30px * var(--multiplier-1440));
+        height: calc(180px * var(--multiplier-1440));
     }
     
     .bottom-text {
@@ -623,9 +646,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1366));
         height: calc(50px * var(--multiplier-1366));
-        /* padding: calc(8px * var(--multiplier-1366)) calc(15px * var(--multiplier-1366));
-        gap: calc(10px * var(--multiplier-1366));
-        border-radius: calc(100px * var(--multiplier-1366)); */
     }
     
     .logout-logo {
@@ -637,23 +657,18 @@ body {
         padding: calc(20px * var(--multiplier-1366));
     }
     
-    .container {
-        /* padding: calc(50px * var(--multiplier-1366)) auto; */
-    }
-    
-    .inner-container {
-        /* width: calc(1500px * var(--multiplier-1366)); */
+    .inner-container {   
         gap: calc(20px * var(--multiplier-1366));
-        margin: calc(10px * var(--multiplier-1366));
+        margin: calc(20px * var(--multiplier-1366));
     }
     
     .section1 {
-        height: calc(140px * var(--multiplier-1366));
+        height: calc(100px * var(--multiplier-1366));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1366));
-        height: calc(115px * var(--multiplier-1366));
+        height: calc(100px * var(--multiplier-1366));
         padding: calc(47px * var(--multiplier-1366)) auto;
         font-size: calc(16px * var(--multiplier-1366));
         line-height: calc(24px * var(--multiplier-1366));
@@ -675,12 +690,12 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(10px * var(--multiplier-1366));
-        padding: calc(10px * var(--multiplier-1366)) 0;
+        gap: calc(15px * var(--multiplier-1366));
+        padding: calc(10.5px * var(--multiplier-1366)) 0;
     }
     
     .section-heading {
-        font-size: calc(35px * var(--multiplier-1366));
+        font-size: calc(40px * var(--multiplier-1366));
     }
     
     .button-group {
@@ -690,7 +705,7 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1366));
         max-width: calc(466px * var(--multiplier-1366));
-        padding: calc(30px * var(--multiplier-1366)) 0px;
+        padding: calc(20px * var(--multiplier-1366)) 0px;
         border-radius: calc(10px * var(--multiplier-1366));
         font-size: calc(35px * var(--multiplier-1366));
         line-height: calc(24px * var(--multiplier-1366));
@@ -702,15 +717,29 @@ body {
     }
     
     .section3 {
+        gap: calc(20px * var(--multiplier-1366));
+    }
+
+    .section3-card-location {
         border-radius: calc(30px * var(--multiplier-1366));
+        border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(10px * var(--multiplier-1366));
-        padding: calc(10px * var(--multiplier-1366)) 0;
+        gap: calc(20px * var(--multiplier-1366));
+        padding: calc(20px * var(--multiplier-1366)) 0;
+    }
+    
+    .section3-card-emergency {
+        border-radius: calc(30px * var(--multiplier-1366));
+        border: 1px solid #363636;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        gap: calc(20px * var(--multiplier-1366));
+        padding: calc(20px * var(--multiplier-1366)) 0;
     }
     
     .location {
         gap: calc(20px * var(--multiplier-1366));
         padding-bottom: calc(38px * var(--multiplier-1366));
+        height: calc(135px * var(--multiplier-1366));
     }
     
     .address {
@@ -719,6 +748,7 @@ body {
     
     .emergency-text {
         font-size: calc(30px * var(--multiplier-1366));
+        height: calc(135px * var(--multiplier-1366));
     }
     
     .bottom-text {
@@ -742,9 +772,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1280));
         height: calc(50px * var(--multiplier-1280));
-        /* padding: calc(8px * var(--multiplier-1280)) calc(15px * var(--multiplier-1280));
-        gap: calc(10px * var(--multiplier-1280));
-        border-radius: calc(100px * var(--multiplier-1280)); */
     }
     
     .logout-logo {
@@ -756,23 +783,18 @@ body {
         padding: calc(20px * var(--multiplier-1280));
     }
     
-    .container {
-        /* padding: calc(50px * var(--multiplier-1280)) auto; */
-    }
-    
-    .inner-container {
-        /* width: calc(1500px * var(--multiplier-1280)); */
-        gap: calc(20px * var(--multiplier-1280));
-        margin: calc(10px * var(--multiplier-1280));
+    .inner-container {   
+        gap: calc(30px * var(--multiplier-1280));
+        margin: calc(20px * var(--multiplier-1280));
     }
     
     .section1 {
-        height: calc(140px * var(--multiplier-1280));
+        height: calc(100px * var(--multiplier-1280));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1280));
-        height: calc(115px * var(--multiplier-1280));
+        height: calc(100px * var(--multiplier-1280));
         padding: calc(47px * var(--multiplier-1280)) auto;
         font-size: calc(16px * var(--multiplier-1280));
         line-height: calc(24px * var(--multiplier-1280));
@@ -794,12 +816,12 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1280));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(10px * var(--multiplier-1280));
-        padding: calc(10px * var(--multiplier-1280)) 0;
+        gap: calc(20px * var(--multiplier-1280));
+        padding: calc(18px * var(--multiplier-1280)) 0;
     }
     
     .section-heading {
-        font-size: calc(35px * var(--multiplier-1280));
+        font-size: calc(40px * var(--multiplier-1280));
     }
     
     .button-group {
@@ -809,7 +831,7 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1280));
         max-width: calc(466px * var(--multiplier-1280));
-        padding: calc(30px * var(--multiplier-1280)) 0px;
+        padding: calc(20px * var(--multiplier-1280)) 0px;
         border-radius: calc(10px * var(--multiplier-1280));
         font-size: calc(35px * var(--multiplier-1280));
         line-height: calc(24px * var(--multiplier-1280));
@@ -821,15 +843,29 @@ body {
     }
     
     .section3 {
+        gap: calc(20px * var(--multiplier-1280));
+    }
+
+    .section3-card-location {
         border-radius: calc(30px * var(--multiplier-1280));
+        border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(10px * var(--multiplier-1280));
-        padding: calc(10px * var(--multiplier-1280)) 0;
+        gap: calc(20px * var(--multiplier-1280));
+        padding: calc(20px * var(--multiplier-1280)) 0;
+    }
+    
+    .section3-card-emergency {
+        border-radius: calc(30px * var(--multiplier-1280));
+        border: 1px solid #363636;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        gap: calc(20px * var(--multiplier-1280));
+        padding: calc(20px * var(--multiplier-1280)) 0;
     }
     
     .location {
         gap: calc(20px * var(--multiplier-1280));
         padding-bottom: calc(38px * var(--multiplier-1280));
+        height: calc(170px * var(--multiplier-1280));
     }
     
     .address {
@@ -838,18 +874,22 @@ body {
     
     .emergency-text {
         font-size: calc(30px * var(--multiplier-1280));
+        height: calc(170px * var(--multiplier-1280));
     }
     
     .bottom-text {
         margin-bottom: calc(15px * var(--multiplier-1280));
         padding: 0px calc(10px * var(--multiplier-1280));
     }
-    
 }
 
 @media screen and (max-width:1200px) {
     .inner-container {
         width: 97%;
+    }
+
+    .section1 {
+        height: calc(162px * var(--multiplier-1280));
     }
 }
 
@@ -919,6 +959,18 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .section3 {
+        flex-direction: column;
+    }
+
+    .section3-card-location {
+        width: 100%;
+    }
+
+    .section3-card-emergency {
+        width: 100%;
     }
 }
 

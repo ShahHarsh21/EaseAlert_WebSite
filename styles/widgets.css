@@ -101,6 +101,8 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
+    border: 1px solid red;
+    border-radius: 20px;
 }
 
 .carousel {
@@ -113,8 +115,7 @@ body {
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
-    border: 1px solid red;
+    margin-bottom: 20px;
     border-radius: 20px;
     background-color: transparent !important;
 
@@ -219,18 +220,20 @@ body {
         padding: 0px calc(10px * var(--multiplier-1600));
     }
 
+    .carousel-container {
+        border-radius: calc(20px * var(--multiplier-1600));
+    }
+
     .carousel-item {
         padding: calc(20px * var(--multiplier-1600));
-        margin-bottom: calc(30px * var(--multiplier-1600));
-        border: 1px solid red;
-        border-radius: calc(20px * var(--multiplier-1600));
+        margin-bottom: calc(20px * var(--multiplier-1600));
         font-size: calc(25px * var(--multiplier-1600));
     }
     
     .dot {
         width: calc(20px * var(--multiplier-1600));
         height: calc(20px * var(--multiplier-1600));
-        margin: 0 calc(5px * var(--multiplier-1600));
+        margin: calc(5px * var(--multiplier-1600)) calc(5px * var(--multiplier-1600));
     }
 }
 
@@ -290,11 +293,13 @@ body {
         padding: 0px calc(10px * var(--multiplier-1440));
     }
 
+    .carousel-container {
+        border-radius: calc(20px * var(--multiplier-1600));
+    }
+
     .carousel-item {
         padding: calc(20px * var(--multiplier-1440));
-        margin-bottom: calc(30px * var(--multiplier-1440));
-        border: 1px solid red;
-        border-radius: calc(20px * var(--multiplier-1440));
+        margin-bottom: calc(20px * var(--multiplier-1440));
         font-size: calc(25px * var(--multiplier-1440));
     }
     
@@ -361,11 +366,13 @@ body {
         padding: 0px calc(10px * var(--multiplier-1366));
     }
 
+    .carousel-container {
+        border-radius: calc(20px * var(--multiplier-1366));
+    }
+
     .carousel-item {
         padding: calc(20px * var(--multiplier-1366));
-        margin-bottom: calc(30px * var(--multiplier-1366));
-        border: 1px solid red;
-        border-radius: calc(20px * var(--multiplier-1366));
+        margin-bottom: calc(20px * var(--multiplier-1366));
         font-size: calc(25px * var(--multiplier-1366));
     }
     
@@ -431,12 +438,14 @@ body {
         margin-bottom: calc(15px * var(--multiplier-1280));
         padding: 0px calc(10px * var(--multiplier-1280));
     }
+
+    .carousel-container {
+        border-radius: calc(20px * var(--multiplier-1280));
+    }
     
     .carousel-item {
         padding: calc(20px * var(--multiplier-1280));
-        margin-bottom: calc(30px * var(--multiplier-1280));
-        border: 1px solid red;
-        border-radius: calc(20px * var(--multiplier-1280));
+        margin-bottom: calc(20px * var(--multiplier-1280));
         font-size: calc(25px * var(--multiplier-1280));
     }
     
@@ -510,17 +519,18 @@ body {
         line-height: 24px;
     }
 
-    .card {
-        width: 300px;
-    }
-
-    .card1 {
-        width: 300px !important;
+    .card, .card1 {
+        width: 90%;
     }
 }
 
 @media screen and (max-width:405px) {
+
+    .card{
+        height: max-content;
+    }
+    
     .card, .card1 {
-        width: 250px;
+        width: 90%;
     }
 }
