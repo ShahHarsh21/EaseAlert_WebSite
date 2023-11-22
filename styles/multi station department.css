@@ -1,13 +1,5 @@
 @import url('../assets/css/root.css');
 
-/* :root {
-    --multiplier-3840: 2.50;
-    --multiplier-2560: 1.45;
-    --multiplier-1600: 0.90;
-    --multiplier-1440: 0.85;
-    --multiplier-1366: 0.80;
-    --multiplier-1280: 0.75;
-} */
 
 body {
     margin: 0;
@@ -209,26 +201,7 @@ textarea {
     bottom: 0;
     text-align: center;
     font-weight: 600;
-    /* color: var(--dark, #000);
-    font-family: 'Work Sans';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal; */
 }
-
-/* @media screen and (max-width:2560){
-    .bottom-text {
-        bottom: 0;
-        text-align: center;
-        color: var(--dark, #000);
-        font-family: 'Work Sans';
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-} */
 
 @media screen and (max-width:1600px) {
 

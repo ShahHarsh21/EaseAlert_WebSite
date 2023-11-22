@@ -27,14 +27,6 @@ body {
 .logout {
     width: 127px;
     height: 50px;
-    display: inline-flex;
-    padding: 8px 15px;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 1px solid rgba(15, 15, 15, 0.10);
-    background: var(--white);
 }
 
 .logout-logo {
@@ -151,19 +143,6 @@ body {
     background-color: #555;
 }
 
-/* @media screen and (max-width:2560){
-    .bottom-text {
-        bottom: 0;
-        text-align: center;
-        color: var(--dark, #000);
-        font-family: 'Work Sans';
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-} */
-
 @media screen and (max-width:1600px) {
     .header {
         height: calc(90px * var(--multiplier-1600));
@@ -179,10 +158,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1600));
         height: calc(50px * var(--multiplier-1600));
-        padding: calc(8px * var(--multiplier-1600)) calc(15px * var(--multiplier-1600));
-        gap: calc(10px * var(--multiplier-1600));
-        border-radius: calc(100px * var(--multiplier-1600));
-        border: 1px solid rgba(15, 15, 15, 0.10);
     }
 
     .logout-logo {
@@ -252,10 +227,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1440));
         height: calc(50px * var(--multiplier-1440));
-        padding: calc(8px * var(--multiplier-1440)) calc(15px * var(--multiplier-1440));
-        gap: calc(10px * var(--multiplier-1440));
-        border-radius: calc(100px * var(--multiplier-1440));
-        border: 1px solid rgba(15, 15, 15, 0.10);
     }
 
     .logout-logo {
@@ -325,10 +296,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1366));
         height: calc(50px * var(--multiplier-1366));
-        padding: calc(8px * var(--multiplier-1366)) calc(15px * var(--multiplier-1366));
-        gap: calc(10px * var(--multiplier-1366));
-        border-radius: calc(100px * var(--multiplier-1366));
-        border: 1px solid rgba(15, 15, 15, 0.10);
     }
 
     .logout-logo {
@@ -398,10 +365,6 @@ body {
     .logout {
         width: calc(127px * var(--multiplier-1280));
         height: calc(50px * var(--multiplier-1280));
-        padding: calc(8px * var(--multiplier-1280)) calc(15px * var(--multiplier-1280));
-        gap: calc(10px * var(--multiplier-1280));
-        border-radius: calc(100px * var(--multiplier-1280));
-        border: 1px solid rgba(15, 15, 15, 0.10);
     }
 
     .logout-logo {
@@ -503,14 +466,6 @@ body {
     .logout {
         width: 70px;
         height: 40px;
-        display: inline-flex;
-        padding: 4px 10px;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        border-radius: 100px;
-        border: 1px solid rgba(15, 15, 15, 0.10);
-        background: var(--white);
     }
 
     .paragraph1 {
