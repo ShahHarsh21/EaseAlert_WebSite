@@ -57,8 +57,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    margin: 30px;
+    gap: 20px;
+    margin: 20px;
 }
 
 .section1 {
@@ -122,14 +122,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 20px 0;
 }
 
 .section-heading {
     color: var(--Dark, #000);
     font-family: 'Work Sans';
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -148,7 +148,7 @@ body {
 .primary-btn {
     width: 100%;
     min-width: 250px;
-    max-width: 466px;
+    max-width: 425px;
     padding: 20px 0px;
     display: flex;
     justify-content: center;
@@ -210,7 +210,7 @@ body {
 
 .location {
     width: 90%;
-    height: 194px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +222,7 @@ body {
     color: var(--Dark, #000);
     text-align: justify;
     font-family: 'Work Sans';
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -231,13 +231,13 @@ body {
 
 .emergency-text {
     width: 90%;
-    height: 194px;
+    height: 100px;
     overflow-y: auto;
     text-align: justify;
 
     color: var(--Dark, #000);
     font-family: 'Work Sans';
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -326,7 +326,7 @@ body {
     
     .primary-btn {
         min-width: calc(250px * var(--multiplier-2560));
-        max-width: calc(466px * var(--multiplier-2560));
+        max-width: calc(375px * var(--multiplier-2560));
         padding: calc(20px * var(--multiplier-2560)) 0px;
         border-radius: calc(10px * var(--multiplier-2560));
         font-size: calc(35px * var(--multiplier-2560));
@@ -452,7 +452,7 @@ body {
     
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1600));
-        max-width: calc(466px * var(--multiplier-1600));
+        max-width: calc(375px * var(--multiplier-1600));
         padding: calc(20px * var(--multiplier-1600)) 0px;
         border-radius: calc(10px * var(--multiplier-1600));
         font-size: calc(35px * var(--multiplier-1600));
@@ -578,7 +578,7 @@ body {
     
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1440));
-        max-width: calc(466px * var(--multiplier-1440));
+        max-width: calc(375px * var(--multiplier-1440));
         padding: calc(20px * var(--multiplier-1440)) 0px;
         border-radius: calc(10px * var(--multiplier-1440));
         font-size: calc(35px * var(--multiplier-1440));
@@ -704,7 +704,7 @@ body {
     
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1366));
-        max-width: calc(466px * var(--multiplier-1366));
+        max-width: calc(375px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1366)) 0px;
         border-radius: calc(10px * var(--multiplier-1366));
         font-size: calc(35px * var(--multiplier-1366));
@@ -830,7 +830,7 @@ body {
     
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1280));
-        max-width: calc(466px * var(--multiplier-1280));
+        max-width: calc(375px * var(--multiplier-1280));
         padding: calc(20px * var(--multiplier-1280)) 0px;
         border-radius: calc(10px * var(--multiplier-1280));
         font-size: calc(35px * var(--multiplier-1280));

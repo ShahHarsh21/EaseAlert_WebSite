@@ -16,8 +16,8 @@
 
 .container .clock {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     border: 10px solid var(--primary);
     align-items: center;
