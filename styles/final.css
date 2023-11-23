@@ -536,12 +536,12 @@ body {
     }
     
     .section1 {
-        height: calc(90px * var(--multiplier-1440));
+        height: calc(100px * var(--multiplier-1440));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1440));
-        height: calc(90px * var(--multiplier-1440));
+        height: calc(100px * var(--multiplier-1440));
         padding: calc(47px * var(--multiplier-1440)) auto;
         font-size: calc(16px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
