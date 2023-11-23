@@ -104,6 +104,13 @@ body {
     line-height: normal;
 }
 
+.left-content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .right-content {
     display: inline-flex;
     justify-content: center;
@@ -901,7 +908,7 @@ body {
         align-items: center;
         flex-direction: column;
         gap: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .button1 {
@@ -943,8 +950,15 @@ body {
         width: 35px;
         height: 35px;
     }
+
+    .left-content {
+        display: inline-flex;
+        width: 100% !important;
+        margin-top: 10px;
+    }
     
     .right-content {
+        display: none;
         width: 100% !important;
         margin-top: 10px;
     }
@@ -1022,10 +1036,19 @@ body {
         background: #8C2828;
     }
 
+    .left-content {
+        margin-bottom: 10px;
+        width: 100% !important;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
     .right-content {
         margin-top: 10px;
         width: 100% !important;
-        display: inline-flex;
+        display: none;
         justify-content: center;
         align-items: center;
         gap: 10px;
