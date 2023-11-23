@@ -212,7 +212,7 @@ body {
     }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1440px) and (max-width:1918px) {
     .header {
         height: calc(90px * var(--multiplier-1440));
         padding: 0 calc(50px * var(--multiplier-1440)) 0 calc(50px * var(--multiplier-1440));
@@ -281,7 +281,7 @@ body {
     }
 } */
 
-@media screen and (min-width:1366px) and (max-width:1918px) {
+@media screen and (max-width:1366px){
     .header {
         height: calc(90px * var(--multiplier-1366));
         padding: 0 calc(50px * var(--multiplier-1366)) 0 calc(50px * var(--multiplier-1366));

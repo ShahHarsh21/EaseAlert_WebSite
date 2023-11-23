@@ -167,7 +167,7 @@ header .current-date {
     }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1440px) and (max-width:1918px) {
     header .icons span {
         height: calc(38px * var(--multiplier-1440));
         width: calc(38px * var(--multiplier-1440));
@@ -208,7 +208,7 @@ header .current-date {
     }
 } */
 
-@media screen and (min-width:1366px) and (max-width:1918px) {
+@media screen and (max-width:1366px) {
     .calendar-title {
         margin: 0px;
         padding: 0px;
