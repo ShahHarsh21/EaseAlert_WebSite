@@ -168,6 +168,11 @@ header .current-date {
 }*/
 
 @media screen and (min-width:1440px) and (max-width:1918px) {
+
+    p{
+        margin: 10px 0;
+    }
+
     header .icons span {
         height: calc(38px * var(--multiplier-1440));
         width: calc(38px * var(--multiplier-1440));
@@ -181,7 +186,7 @@ header .current-date {
     }
     
     header .current-date {
-        font-size: calc(1.5rem * var(--multiplier-1440));
+        font-size: calc(1.3rem * var(--multiplier-1440));
     }
     
     .calendar .days {
@@ -194,11 +199,11 @@ header .current-date {
     }
     
     .calendar .weeks li {
-        font-size: calc(1.5rem * var(--multiplier-1440));
+        font-size: calc(1.3rem * var(--multiplier-1440));
     }
     
     .calendar .days li {
-        font-size: calc(1.5rem * var(--multiplier-1440));
+        font-size: calc(1.3rem * var(--multiplier-1440));
         margin-top: calc(30px * var(--multiplier-1440));
     }
     
