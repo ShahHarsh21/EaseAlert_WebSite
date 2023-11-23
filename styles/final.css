@@ -531,7 +531,7 @@ body {
     }
     
     .inner-container {   
-        gap: calc(15px * var(--multiplier-1440));
+        gap: calc(25px * var(--multiplier-1440));
         margin: calc(15px * var(--multiplier-1440));
     }
     
