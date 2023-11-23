@@ -304,26 +304,26 @@ body {
     }
 
     .main {
-        padding: calc(20px * var(--multiplier-1366));
+        padding: calc(10px * var(--multiplier-1366));
     }
 
     .container {
-        gap: calc(20px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
     }
 
     .section {
-        gap: calc(20px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
     }
     
     .card {
-        height: calc(380px * var(--multiplier-1366));
+        height: calc(370px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1366)) calc(20px * var(--multiplier-1366));
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px calc(4px * var(--multiplier-1366)) calc(30px * var(--multiplier-1366)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
-        height: calc(180px * var(--multiplier-1366));
+        height: calc(150px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1366));
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px calc(4px * var(--multiplier-1366)) calc(30px * var(--multiplier-1366)) 0px rgba(0, 0, 0, 0.08);
