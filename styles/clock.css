@@ -98,6 +98,43 @@
     border: 0;
 } */
 
+@media screen and (min-width:1440px) and (max-width:1918px) {
+
+    .container .clock {
+        height: calc(300px * var(--multiplier-1440));
+        width: calc(300px * var(--multiplier-1440));
+    }
+    
+    .clock label {
+        inset: calc(20px * var(--multiplier-1440));
+    }
+    
+    .clock label span {
+        font-size: calc(24.07px * var(--multiplier-1440));
+    }
+    
+    .container .indicator {
+        height: calc(10px * var(--multiplier-1440));
+        width: calc(10px * var(--multiplier-1440));
+    }
+    
+    .indicator .hand {
+        height: calc(110px * var(--multiplier-1440));
+        width: calc(4px * var(--multiplier-1440));
+        border-radius: calc(25px * var(--multiplier-1440));
+    }
+    
+    .hand.minute {
+        height: calc(100px * var(--multiplier-1440));
+        width: calc(5px * var(--multiplier-1440));
+    }
+    
+    .hand.hour {
+        height: calc(80px * var(--multiplier-1440));
+        width: calc(8px * var(--multiplier-1440));
+    }
+}
+
 @media screen and (max-width:1366px) {
 
     .container .clock {
