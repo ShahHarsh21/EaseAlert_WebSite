@@ -563,7 +563,7 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(10px * var(--multiplier-1440));
+        gap: calc(18px * var(--multiplier-1440));
         padding: calc(16px * var(--multiplier-1440)) 0;
     }
     
