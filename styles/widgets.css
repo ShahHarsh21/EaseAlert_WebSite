@@ -210,9 +210,9 @@ body {
         height: calc(20px * var(--multiplier-1600));
         margin: calc(5px * var(--multiplier-1600)) calc(5px * var(--multiplier-1600));
     }
-}
+}*/
 
-@media screen and (max-width:1440px) and (max-width:1918px) {
+@media screen and (mix-width:1440px) and (max-width:1918px) {
     .header {
         height: calc(90px * var(--multiplier-1440));
         padding: 0 calc(50px * var(--multiplier-1440)) 0 calc(50px * var(--multiplier-1440));
@@ -279,7 +279,7 @@ body {
         height: calc(20px * var(--multiplier-1440));
         margin: 0 calc(5px * var(--multiplier-1440));
     }
-} */
+}
 
 @media screen and (max-width:1366px){
     .header {
