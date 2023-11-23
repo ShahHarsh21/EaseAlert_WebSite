@@ -890,6 +890,20 @@ body {
     }
 }
 
+@media screen and(min-width:502px) and  (max-width:1024px) {
+    .primary-btn {
+        width: 50%;
+        
+    }
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .inner-container {
         width: 97%;
@@ -972,7 +986,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .section3 {
