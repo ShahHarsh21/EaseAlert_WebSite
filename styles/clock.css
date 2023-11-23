@@ -101,8 +101,8 @@
 @media screen and (min-width:1366px) and (max-width:1918px) {
 
     .container .clock {
-        height: calc(270px * var(--multiplier-1366));
-        width: calc(270px * var(--multiplier-1366));
+        height: calc(300px * var(--multiplier-1366));
+        width: calc(300px * var(--multiplier-1366));
     }
     
     .clock label {

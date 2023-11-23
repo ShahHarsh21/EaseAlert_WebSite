@@ -230,7 +230,7 @@ header .current-date {
     }
     
     .calendar .days {
-        margin-bottom: 5px;
+        margin-bottom: calc(10px * var(--multiplier-1366));;
         padding: 0px !important;
     }
     
@@ -244,7 +244,7 @@ header .current-date {
     
     .calendar .days li {
         font-size: calc(1.5rem * var(--multiplier-1366));
-        margin-top: calc(5px * var(--multiplier-1366));
+        margin-top: calc(10px * var(--multiplier-1366));
     }
     
     .days li::before {
