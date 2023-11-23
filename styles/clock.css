@@ -9,7 +9,7 @@
 
 .container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 100%;
 }
@@ -98,10 +98,11 @@
     border: 0;
 } */
 
-@media screen and (max-width:1366px) {
+@media screen and (min-width:1366px) and (max-width:1920px) {
+
     .container .clock {
-        height: calc(400px * var(--multiplier-1366));
-        width: calc(400px * var(--multiplier-1366));
+        height: calc(270px * var(--multiplier-1366));
+        width: calc(270px * var(--multiplier-1366));
     }
     
     .clock label {
@@ -118,18 +119,18 @@
     }
     
     .indicator .hand {
-        height: calc(130px * var(--multiplier-1366));
+        height: calc(110px * var(--multiplier-1366));
         width: calc(4px * var(--multiplier-1366));
         border-radius: calc(25px * var(--multiplier-1366));
     }
     
     .hand.minute {
-        height: calc(120px * var(--multiplier-1366));
+        height: calc(100px * var(--multiplier-1366));
         width: calc(5px * var(--multiplier-1366));
     }
     
     .hand.hour {
-        height: calc(100px * var(--multiplier-1366));
+        height: calc(80px * var(--multiplier-1366));
         width: calc(8px * var(--multiplier-1366));
     }
 }

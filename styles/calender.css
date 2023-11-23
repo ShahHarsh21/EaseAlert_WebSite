@@ -126,7 +126,7 @@ header .current-date {
     background: #f2f2f2;
 }
 
-@media screen and (max-width:1600px) {
+/* @media screen and (max-width:1600px) {
     header .icons span {
         height: calc(38px * var(--multiplier-1600));
         width: calc(38px * var(--multiplier-1600));
@@ -206,9 +206,13 @@ header .current-date {
         height: calc(40px * var(--multiplier-1440));
         width: calc(40px * var(--multiplier-1440));
     }
-}
+} */
 
-@media screen and (max-width:1366px) {
+@media screen and (min-width:1366px) and (max-width:1920px) {
+    .calendar-title {
+        margin: 0px;
+        padding: 0px;
+    }
     header .icons span {
         height: calc(38px * var(--multiplier-1366));
         width: calc(38px * var(--multiplier-1366));
@@ -226,7 +230,7 @@ header .current-date {
     }
     
     .calendar .days {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         padding: 0px !important;
     }
     
@@ -240,7 +244,7 @@ header .current-date {
     
     .calendar .days li {
         font-size: calc(1.5rem * var(--multiplier-1366));
-        margin-top: calc(30px * var(--multiplier-1366));
+        margin-top: calc(5px * var(--multiplier-1366));
     }
     
     .days li::before {

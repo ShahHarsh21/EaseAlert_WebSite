@@ -143,7 +143,7 @@ body {
     background-color: #555;
 }
 
-@media screen and (max-width:1600px) {
+/* @media screen and (max-width:1600px) {
     .header {
         height: calc(90px * var(--multiplier-1600));
         padding: 0 calc(50px * var(--multiplier-1600)) 0 calc(50px * var(--multiplier-1600));
@@ -279,9 +279,9 @@ body {
         height: calc(20px * var(--multiplier-1440));
         margin: 0 calc(5px * var(--multiplier-1440));
     }
-}
+} */
 
-@media screen and (max-width:1366px) {
+@media screen and (min-width:1366px) and (max-width:1920px) {
     .header {
         height: calc(90px * var(--multiplier-1366));
         padding: 0 calc(50px * var(--multiplier-1366)) 0 calc(50px * var(--multiplier-1366));
@@ -304,25 +304,26 @@ body {
     }
 
     .main {
-        padding: calc(20px * var(--multiplier-1366));
+        padding: calc(10px * var(--multiplier-1366));
     }
 
     .container {
-        gap: calc(15px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
     }
 
     .section {
-        gap: calc(15px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
     }
     
     .card {
-        height: calc(500px * var(--multiplier-1366));
-        padding: calc(50px * var(--multiplier-1366)) calc(20px * var(--multiplier-1366));
+        height: calc(330px * var(--multiplier-1366));
+        padding: calc(20px * var(--multiplier-1366)) calc(20px * var(--multiplier-1366));
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px calc(4px * var(--multiplier-1366)) calc(30px * var(--multiplier-1366)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
+        height: calc(120px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1366));
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px calc(4px * var(--multiplier-1366)) calc(30px * var(--multiplier-1366)) 0px rgba(0, 0, 0, 0.08);
