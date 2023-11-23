@@ -235,7 +235,7 @@ body {
     }
 
     .main {
-        padding: calc(30px * var(--multiplier-1440));
+        padding: calc(20px * var(--multiplier-1440));
     }
 
     .container {
@@ -247,13 +247,14 @@ body {
     }
     
     .card {
-        height: calc(500px * var(--multiplier-1440));
+        height: calc(400px * var(--multiplier-1440));
         padding: calc(20px * var(--multiplier-1440)) calc(20px * var(--multiplier-1440)) calc(50px * var(--multiplier-1440)) calc(20px * var(--multiplier-1440));
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px calc(4px * var(--multiplier-1440)) calc(30px * var(--multiplier-1440)) 0px rgba(0, 0, 0, 0.08);
     }
 
     .card1 {
+        height: calc(200px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1440));
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px calc(4px * var(--multiplier-1440)) calc(30px * var(--multiplier-1440)) 0px rgba(0, 0, 0, 0.08);
