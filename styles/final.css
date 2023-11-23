@@ -211,7 +211,7 @@ body {
     width: 90%;
     height: 100px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 20px;
     overflow-y: auto;
@@ -252,7 +252,7 @@ body {
     font-weight: 600;
 }
 
-@media screen and (min-width:1921px) and (max-width:2560px) {
+/* @media screen and (min-width:1921px) and (max-width:2560px) {
     .header {
         height: calc(90px * var(--multiplier-2560));
         padding: 0 calc(50px * var(--multiplier-2560)) 0 calc(50px * var(--multiplier-2560));
@@ -628,9 +628,9 @@ body {
         margin-bottom: calc(23px * var(--multiplier-1440));
         padding: 0px calc(10px * var(--multiplier-1440));
     }
-}
+} */
 
-@media screen and (max-width:1366px) {
+@media screen and (min-width:1366px) and (max-width:1918px) {
     .header {
         height: calc(90px * var(--multiplier-1366));
         padding: 0 calc(50px * var(--multiplier-1366)) 0 calc(50px * var(--multiplier-1366));
@@ -657,17 +657,17 @@ body {
     }
     
     .inner-container {   
-        gap: calc(20px * var(--multiplier-1366));
-        margin: calc(20px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
+        margin: calc(10px * var(--multiplier-1366));
     }
     
     .section1 {
-        height: calc(100px * var(--multiplier-1366));
+        height: calc(80px * var(--multiplier-1366));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1366));
-        height: calc(100px * var(--multiplier-1366));
+        height: calc(80px * var(--multiplier-1366));
         padding: calc(47px * var(--multiplier-1366)) auto;
         font-size: calc(16px * var(--multiplier-1366));
         line-height: calc(24px * var(--multiplier-1366));
@@ -689,12 +689,12 @@ body {
     .section2 {
         border-radius: calc(30px * var(--multiplier-1366));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(15px * var(--multiplier-1366));
+        gap: calc(7px * var(--multiplier-1366));
         padding: calc(10.5px * var(--multiplier-1366)) 0;
     }
     
     .section-heading {
-        font-size: calc(30px * var(--multiplier-1366));
+        font-size: calc(28px * var(--multiplier-1366));
     }
     
     .button-group {
@@ -704,9 +704,9 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1366));
         max-width: calc(375px * var(--multiplier-1366));
-        padding: calc(20px * var(--multiplier-1366)) 0px;
+        padding: calc(10px * var(--multiplier-1366)) 0px;
         border-radius: calc(10px * var(--multiplier-1366));
-        font-size: calc(35px * var(--multiplier-1366));
+        font-size: calc(24px * var(--multiplier-1366));
         line-height: calc(24px * var(--multiplier-1366));
     }
 
@@ -723,7 +723,7 @@ body {
         border-radius: calc(30px * var(--multiplier-1366));
         border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(20px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1366)) 0;
     }
     
@@ -731,23 +731,23 @@ body {
         border-radius: calc(30px * var(--multiplier-1366));
         border: 1px solid #363636;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-        gap: calc(20px * var(--multiplier-1366));
+        gap: calc(10px * var(--multiplier-1366));
         padding: calc(20px * var(--multiplier-1366)) 0;
     }
     
     .location {
         gap: calc(20px * var(--multiplier-1366));
-        padding-bottom: calc(38px * var(--multiplier-1366));
-        height: calc(135px * var(--multiplier-1366));
+        /* padding-bottom: calc(38px * var(--multiplier-1366)); */
+        height: calc(70px * var(--multiplier-1366));
     }
     
     .address {
-        font-size: calc(25px * var(--multiplier-1366));
+        font-size: calc(20px * var(--multiplier-1366));
     }
     
     .emergency-text {
-        font-size: calc(25px * var(--multiplier-1366));
-        height: calc(135px * var(--multiplier-1366));
+        font-size: calc(20px * var(--multiplier-1366));
+        height: calc(70px * var(--multiplier-1366));
     }
     
     .bottom-text {
