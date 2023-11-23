@@ -212,7 +212,7 @@ body {
     }
 }*/
 
-@media screen and (mix-width:1440px) and (max-width:1918px) {
+@media screen and (min-width:1440px) and (max-width:1918px) {
     .header {
         height: calc(90px * var(--multiplier-1440));
         padding: 0 calc(50px * var(--multiplier-1440)) 0 calc(50px * var(--multiplier-1440));
@@ -254,7 +254,7 @@ body {
     }
 
     .card1 {
-        height: calc(200px * var(--multiplier-1366));
+        height: calc(200px * var(--multiplier-1440));
         padding: calc(20px * var(--multiplier-1440));
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px calc(4px * var(--multiplier-1440)) calc(30px * var(--multiplier-1440)) 0px rgba(0, 0, 0, 0.08);
@@ -266,7 +266,7 @@ body {
     }
 
     .carousel-container {
-        border-radius: calc(20px * var(--multiplier-1600));
+        border-radius: calc(20px * var(--multiplier-1440));
     }
 
     .carousel-item {
