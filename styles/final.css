@@ -548,12 +548,12 @@ body {
     }
     
     .section1 {
-        height: calc(100px * var(--multiplier-1440));
+        height: calc(120px * var(--multiplier-1440));
     }
     
     .button1 {
         width: calc(539px * var(--multiplier-1440));
-        height: calc(100px * var(--multiplier-1440));
+        height: calc(120px * var(--multiplier-1440));
         padding: calc(47px * var(--multiplier-1440)) auto;
         font-size: calc(16px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
@@ -585,7 +585,7 @@ body {
     }
     
     .section-heading {
-        font-size: calc(28px * var(--multiplier-1440));
+        font-size: calc(36px * var(--multiplier-1440));
     }
     
     .button-group {
@@ -597,7 +597,7 @@ body {
         max-width: calc(375px * var(--multiplier-1440));
         padding: calc(15px * var(--multiplier-1440)) 0px;
         border-radius: calc(10px * var(--multiplier-1440));
-        font-size: calc(35px * var(--multiplier-1440));
+        font-size: calc(30px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
     }
 
@@ -633,16 +633,16 @@ body {
     }
     
     .address {
-        font-size: calc(22px * var(--multiplier-1440));
+        font-size: calc(25px * var(--multiplier-1440));
     }
     
     .emergency-text {
-        font-size: calc(22px * var(--multiplier-1440));
+        font-size: calc(25px * var(--multiplier-1440));
         height: calc(120px * var(--multiplier-1440));
     }
     
     .bottom-text {
-        margin-top: calc(10px * var(--multiplier-1440));
+        margin-top: calc(15px * var(--multiplier-1440));
         margin-bottom: calc(23px * var(--multiplier-1440));
         padding: 0px calc(10px * var(--multiplier-1440));
     }
