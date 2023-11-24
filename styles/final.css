@@ -589,7 +589,7 @@ body {
     }
     
     .button-group {
-        gap: calc(20px * var(--multiplier-1440));
+        gap: calc(15px * var(--multiplier-1440));
     }
     
     .primary-btn {
@@ -629,7 +629,7 @@ body {
     .location {
         gap: calc(20px * var(--multiplier-1440));
         /* padding-bottom: calc(38px * var(--multiplier-1440)); */
-        height: calc(120px * var(--multiplier-1440));
+        height: calc(100px * var(--multiplier-1440));
     }
     
     .address {
@@ -638,7 +638,7 @@ body {
     
     .emergency-text {
         font-size: calc(20px * var(--multiplier-1440));
-        height: calc(120px * var(--multiplier-1440));
+        height: calc(100px * var(--multiplier-1440));
     }
     
     .bottom-text {
