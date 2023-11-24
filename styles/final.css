@@ -543,8 +543,8 @@ body {
     }
     
     .inner-container {   
-        gap: calc(25px * var(--multiplier-1440));
-        margin: calc(15px * var(--multiplier-1440));
+        gap: calc(30px * var(--multiplier-1440));
+        margin: calc(20px * var(--multiplier-1440));
     }
     
     .section1 {
@@ -554,7 +554,7 @@ body {
     .button1 {
         width: calc(539px * var(--multiplier-1440));
         height: calc(100px * var(--multiplier-1440));
-        padding: calc(40px * var(--multiplier-1440)) auto;
+        padding: calc(47px * var(--multiplier-1440)) auto;
         font-size: calc(16px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
         border-radius: calc(40px * var(--multiplier-1440));
@@ -581,7 +581,7 @@ body {
         border-radius: calc(30px * var(--multiplier-1440));
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
         gap: calc(18px * var(--multiplier-1440));
-        padding: calc(16px * var(--multiplier-1440)) 0;
+        padding: calc(20px * var(--multiplier-1440)) 0;
     }
     
     .section-heading {
@@ -595,7 +595,7 @@ body {
     .primary-btn {
         min-width: calc(250px * var(--multiplier-1440));
         max-width: calc(375px * var(--multiplier-1440));
-        padding: calc(10px * var(--multiplier-1440)) 0px;
+        padding: calc(15px * var(--multiplier-1440)) 0px;
         border-radius: calc(10px * var(--multiplier-1440));
         font-size: calc(35px * var(--multiplier-1440));
         line-height: calc(24px * var(--multiplier-1440));
@@ -629,7 +629,7 @@ body {
     .location {
         gap: calc(20px * var(--multiplier-1440));
         /* padding-bottom: calc(38px * var(--multiplier-1440)); */
-        height: calc(100px * var(--multiplier-1440));
+        height: calc(120px * var(--multiplier-1440));
     }
     
     .address {
@@ -638,12 +638,12 @@ body {
     
     .emergency-text {
         font-size: calc(22px * var(--multiplier-1440));
-        height: calc(100px * var(--multiplier-1440));
+        height: calc(120px * var(--multiplier-1440));
     }
     
     .bottom-text {
         margin-top: calc(10px * var(--multiplier-1440));
-        margin-bottom: calc(20px * var(--multiplier-1440));
+        margin-bottom: calc(23px * var(--multiplier-1440));
         padding: 0px calc(10px * var(--multiplier-1440));
     }
 }
