@@ -39,6 +39,9 @@ body {
     padding: 20px;
     height: auto;
     background-color: #E57D03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -539,7 +542,6 @@ body {
     }
     
     .main {
-        min-height: 90vh;
         padding: calc(20px * var(--multiplier-1440));
     }
     
