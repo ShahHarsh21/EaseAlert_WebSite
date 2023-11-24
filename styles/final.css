@@ -39,9 +39,6 @@ body {
     padding: 20px;
     height: auto;
     background-color: #E57D03;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
