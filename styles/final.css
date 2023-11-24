@@ -642,8 +642,9 @@ body {
     }
     
     .bottom-text {
-        margin-top: calc(15px * var(--multiplier-1440));
-        margin-bottom: calc(23px * var(--multiplier-1440));
+        margin-top: calc(10px * var(--multiplier-1440));
+        margin-bottom: calc(10px * var(--multiplier-1440));
+        font-size: calc(20px * var(--multiplier-1440));
         padding: 0px calc(10px * var(--multiplier-1440));
     }
 }
